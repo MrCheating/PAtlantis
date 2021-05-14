@@ -2,7 +2,7 @@ name: PAtlantis
 version: ${project.version}
 main: me.nullpointer.com.PAtlantis
 commands:
-  advertisement:
-    aliases: [ad]
-  hide:
-    aliases: [toggleplayers]
+  anunciotela:
+    aliases: [ ad ]
+  esconder:
+    aliases: [ toggleplayers ]

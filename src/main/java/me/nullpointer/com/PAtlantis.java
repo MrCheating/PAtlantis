@@ -3,11 +3,9 @@ package me.nullpointer.com;
 import me.nullpointer.com.commands.AdvertisementCommand;
 import me.nullpointer.com.commands.HideCommand;
 import me.nullpointer.com.events.PlayerListener;
-import me.nullpointer.com.utils.EnchantGlow;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.event.Listener;
-import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class PAtlantis extends JavaPlugin {
@@ -35,8 +33,8 @@ public final class PAtlantis extends JavaPlugin {
     }
 
     public void commandsHandler() {
-        registerCommand("advertisement", new AdvertisementCommand());
-        registerCommand("hide", new HideCommand());
+        registerCommand("anunciotela", new AdvertisementCommand());
+        registerCommand("esconder", new HideCommand());
     }
 
     public void eventsHandler() {
