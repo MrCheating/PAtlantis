@@ -1,0 +1,8 @@
+name: PAtlantis
+version: ${project.version}
+main: me.nullpointer.com.PAtlantis
+commands:
+  anunciotela:
+    aliases: [alertatela]
+  esconder:
+    aliases: [toggleplayers]
