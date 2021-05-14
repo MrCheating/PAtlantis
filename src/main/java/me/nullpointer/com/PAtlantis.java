@@ -35,8 +35,8 @@ public final class PAtlantis extends JavaPlugin {
     }
 
     public void commandsHandler() {
-        registerCommand("anunciotela", new AdvertisementCommand());
-        registerCommand("esconder", new HideCommand());
+        registerCommand("advertisement", new AdvertisementCommand());
+        registerCommand("hide", new HideCommand());
     }
 
     public void eventsHandler() {
