@@ -10,11 +10,11 @@ import org.bukkit.event.player.PlayerJoinEvent;
 public class PlayerListener implements Listener {
 
     @EventHandler
-    public void onJoin(PlayerJoinEvent e){
+    public void onJoin(PlayerJoinEvent e) {
         Player p = e.getPlayer();
-        for(Player p1: Bukkit.getOnlinePlayers()){
-            if(ManagerHideorShow.players.contains(p1)){
-                if(!p.hasPermission("atlantis.staff.*")){
+        for (Player p1 : Bukkit.getOnlinePlayers()) {
+            if (ManagerHideorShow.players.contains(p1)) {
+                if (!p.hasPermission("atlantis.staff.*")) {
                     p1.hidePlayer(p);
                 }
             }

@@ -1,0 +1,9 @@
+Itens:
+  Item1:
+    nome: '&cTeste'
+    id: 276
+    data: 0
+    custo: 5
+    quantidade: 1
+    slot: 0
+    enchants: sharpness:1

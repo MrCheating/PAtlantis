@@ -11,41 +11,12 @@ public class EnchantGlow extends EnchantmentWrapper {
 
     private static Enchantment glow;
 
-    public EnchantGlow(){
+    public EnchantGlow() {
         super(250);
     }
+
     public EnchantGlow(int id) {
         super(id);
-    }
-
-
-    public boolean canEnchantItem(ItemStack item) {
-        return false;
-    }
-
-
-    public boolean conflictsWith(Enchantment other) {
-        return false;
-    }
-
-
-    public EnchantmentTarget getItemTarget() {
-        return null;
-    }
-
-
-    public int getMaxLevel() {
-        return 10;
-    }
-
-
-    public String getName() {
-        return "Glow";
-    }
-
-
-    public int getStartLevel() {
-        return 1;
     }
 
     public static Enchantment getGlow() {
@@ -82,6 +53,30 @@ public class EnchantGlow extends EnchantmentWrapper {
             item.removeEnchantment(glow);
 
         return item;
+    }
+
+    public boolean canEnchantItem(ItemStack item) {
+        return false;
+    }
+
+    public boolean conflictsWith(Enchantment other) {
+        return false;
+    }
+
+    public EnchantmentTarget getItemTarget() {
+        return null;
+    }
+
+    public int getMaxLevel() {
+        return 10;
+    }
+
+    public String getName() {
+        return "Glow";
+    }
+
+    public int getStartLevel() {
+        return 1;
     }
 
 }
